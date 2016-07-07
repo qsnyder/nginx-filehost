@@ -13,7 +13,7 @@ uses docker container to provide http filserver functionality within environment
 
     cd nginx-filehost
     mv -r ~/html/some-content ~/nginx-filehost/www/
-    docker built -t nginx-filehost .
+    docker build -t nginx-filehost .
     docker run --name nginx-host1 -d -p 8080:80 nginx-filehost
 
 ### Caveats
